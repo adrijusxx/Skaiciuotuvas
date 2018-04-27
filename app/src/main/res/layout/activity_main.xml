@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/rezultatasView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/buttonDalyba"
+        android:layout_marginBottom="30dp"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/rezultatasEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/buttonDalyba"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"
+        android:background="@android:color/darker_gray"
+        android:enabled="false"
+        android:gravity="bottom"
+        android:lines="2"
+        android:maxLines="2"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonSeptyni"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rezultatasEdit"
+        android:text="7"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonAstuoni"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rezultatasEdit"
+        android:layout_toRightOf="@id/buttonSeptyni"
+        android:text="8"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonDevyni"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rezultatasEdit"
+        android:layout_toRightOf="@id/buttonAstuoni"
+        android:text="9"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonKeturi"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSeptyni"
+        android:text="4"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonPenki"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/buttonAstuoni"
+        android:layout_below="@id/buttonAstuoni"
+        android:text="5"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonSesi"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/buttonDevyni"
+        android:layout_below="@id/buttonDevyni"
+        android:text="6"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonVienas"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonKeturi"
+        android:text="1"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonDu"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/buttonAstuoni"
+        android:layout_below="@id/buttonPenki"
+        android:text="2"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonTrys"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/buttonDevyni"
+        android:layout_below="@id/buttonSesi"
+        android:text="3"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonKablelis"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonVienas"
+        android:text=","
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonNulis"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/buttonAstuoni"
+        android:layout_below="@id/buttonDu"
+        android:text="0"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonLygu"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/buttonDevyni"
+        android:layout_below="@id/buttonTrys"
+        android:text="="
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonDalyba"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/buttonDevyni"
+        android:layout_toRightOf="@id/buttonDevyni"
+        android:background="@android:color/darker_gray"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="/"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonDaugyba"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/buttonSesi"
+        android:layout_toRightOf="@id/buttonSesi"
+        android:background="@android:color/darker_gray"
+        android:text="*"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonAtimtis"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/buttonTrys"
+        android:layout_toRightOf="@id/buttonTrys"
+        android:background="@android:color/darker_gray"
+        android:text="-"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/buttonIstrinti"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonLygu"
+        android:background="@android:color/darker_gray"
+        android:text="C"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/buttonSaknis"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/buttonIstrinti"
+        android:layout_toRightOf="@id/buttonIstrinti"
+        android:background="@android:color/darker_gray"
+        android:text="√"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonSudetis"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/buttonLygu"
+        android:layout_toRightOf="@id/buttonLygu"
+        android:background="@android:color/darker_gray"
+        android:text="+"
+        android:textSize="20sp" />
+
+</RelativeLayout>
